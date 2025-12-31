@@ -1,24 +1,11 @@
 {
-  "name": "railway-vless-ws-tls",
-  "version": "2.0.0",
-  "description": "High-performance VLESS WS TLS proxy server for Railway",
-  "main": "index.js",
-  "author": "Railway-EasyShare",
-  "license": "MIT",
-  "engines": {
-    "node": ">=18.0.0"
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npm install --omit=dev"
   },
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "ws": "^8.17.0"
-  },
-  "keywords": [
-    "vless",
-    "websocket",
-    "tls",
-    "proxy",
-    "railway"
-  ]
+  "deploy": {
+    "startCommand": "node index.js",
+    "healthcheckPath": "/health"
+  }
 }
