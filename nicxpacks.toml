@@ -1,0 +1,12 @@
+[phases.setup]
+cmds = ["npm install --omit=dev"]
+
+[phases.install]
+cmds = ["echo 'Installation complete'"]
+
+[start]
+cmd = "node index.js"
+
+[environment]
+NODE_ENV = "production"
+PORT = "3000"
