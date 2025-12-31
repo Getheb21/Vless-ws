@@ -9,27 +9,16 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "start": "node index.js"
   },
   "dependencies": {
     "ws": "^8.17.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
   },
   "keywords": [
     "vless",
     "websocket",
     "tls",
     "proxy",
-    "railway",
-    "v2ray"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/railway-vless.git"
-  },
-  "homepage": "https://railway.app"
+    "railway"
+  ]
 }
