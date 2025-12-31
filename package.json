@@ -1,11 +1,14 @@
 {
-  "$schema": "https://railway.app/railway.schema.json",
-  "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "npm install --omit=dev"
+  "name": "railway-vless",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
   },
-  "deploy": {
-    "startCommand": "node index.js",
-    "healthcheckPath": "/health"
+  "dependencies": {
+    "ws": "8.17.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
