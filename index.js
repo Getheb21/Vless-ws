@@ -3,7 +3,7 @@ process.on("unhandledRejection", () => {});
 
 // ====== 只修改两个核心变量 UUID/DOMAIN ======
 const UUID = (process.env.UUID || "abcd1eb2-1c20-345a-96fa-cdf394612345").trim();
-const DOMAIN = (process.env.RAILWAY_STATIC_URL || process.env.RAILWAY_PUBLIC_DOMAIN || "your-app.railway.app").trim();
+const DOMAIN = (process.env.RAILWAY_STATIC_URL || process.env.RAILWAY_PUBLIC_DOMAIN || "vless-ws-kuncung.up.railway.app").trim();
 
 // Panel 配置
 const NAME = "Railway-VLESS-WS-TLS";
